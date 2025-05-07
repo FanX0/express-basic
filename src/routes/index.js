@@ -7,6 +7,7 @@ import requestHeaderRoutes from "./request-header.routes.js";
 import responseRoutes from "./response.routes.js";
 import responseStatusRoutes from "./response-status.routes.js";
 import responseHeaderRoutes from "./response-header.routes.js";
+import responseBodyRoutes from "./response-body.routes.js";
 
 const router = Router();
 
@@ -18,5 +19,6 @@ router.use("/request-header", requestHeaderRoutes);
 router.use("/response", responseRoutes);
 router.use("/response-status", responseStatusRoutes);
 router.use("/response-header", responseHeaderRoutes);
+router.use("/response-body", responseBodyRoutes);
 
 export default router;
