@@ -5,6 +5,7 @@ import requestURLRoutes from "./request-url.routes.js";
 import requestQueryRoutes from "./request-query.routes.js";
 import requestHeaderRoutes from "./request-header.routes.js";
 import responseRoutes from "./response.routes.js";
+import responseStatusRoutes from "./response-status.routes.js";
 
 const router = Router();
 
@@ -14,5 +15,6 @@ router.use("/request-url", requestURLRoutes);
 router.use("/request-query", requestQueryRoutes);
 router.use("/request-header", requestHeaderRoutes);
 router.use("/response", responseRoutes);
+router.use("/response-status", responseStatusRoutes);
 
 export default router;
