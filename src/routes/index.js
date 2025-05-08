@@ -12,6 +12,7 @@ import responseRedirectRoutes from "./response-redirect.routes.js";
 import requestTimeRoutes from "./request-time.routes.js";
 import productsRoutes from "./products.routes.js";
 import requestBodyRoutes from "./request-body.routes.js";
+import requestBodyFormRoutes from "./request-body-form.routes.js";
 
 const router = Router();
 
@@ -28,5 +29,6 @@ router.use("/response-redirect", responseRedirectRoutes);
 router.use("/request-time", requestTimeRoutes);
 router.use("/products/*filepath.json", productsRoutes);
 router.use("/request-body", requestBodyRoutes);
+router.use("/request-body-form", requestBodyFormRoutes);
 
 export default router;
