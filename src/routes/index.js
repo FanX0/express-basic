@@ -13,6 +13,7 @@ import requestTimeRoutes from "./request-time.routes.js";
 import productsRoutes from "./products.routes.js";
 import requestBodyRoutes from "./request-body.routes.js";
 import requestBodyFormRoutes from "./request-body-form.routes.js";
+import cookieParserRoutes from "./cookie-parser.routes.js";
 
 const router = Router();
 
@@ -30,5 +31,6 @@ router.use("/request-time", requestTimeRoutes);
 router.use("/products/*filepath.json", productsRoutes);
 router.use("/request-body", requestBodyRoutes);
 router.use("/request-body-form", requestBodyFormRoutes);
+router.use("/cookie-parser", cookieParserRoutes);
 
 export default router;
