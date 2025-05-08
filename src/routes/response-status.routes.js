@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { getResponseStatus } from "../controller/response-status.controller";
+import { getResponseStatus } from "../controller/response-status.controller.js";
 
 const router = Router();
 

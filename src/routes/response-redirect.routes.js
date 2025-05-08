@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { getResponseRedirect } from "../controller/response-redirect.controller";
+import { getResponseRedirect } from "../controller/response-redirect.controller.js";
 
 const router = Router();
 
