@@ -9,6 +9,7 @@ import responseStatusRoutes from "./response-status.routes.js";
 import responseHeaderRoutes from "./response-header.routes.js";
 import responseBodyRoutes from "./response-body.routes.js";
 import responseRedirectRoutes from "./response-redirect.routes.js";
+import requestTimeRoutes from "./request-time.routes.js";
 
 const router = Router();
 
@@ -22,5 +23,6 @@ router.use("/response-status", responseStatusRoutes);
 router.use("/response-header", responseHeaderRoutes);
 router.use("/response-body", responseBodyRoutes);
 router.use("/response-redirect", responseRedirectRoutes);
+router.use("/request-time", requestTimeRoutes);
 
 export default router;
