@@ -10,6 +10,7 @@ import responseHeaderRoutes from "./response-header.routes.js";
 import responseBodyRoutes from "./response-body.routes.js";
 import responseRedirectRoutes from "./response-redirect.routes.js";
 import requestTimeRoutes from "./request-time.routes.js";
+import productsRoutes from "./products.routes.js";
 
 const router = Router();
 
@@ -24,5 +25,6 @@ router.use("/response-header", responseHeaderRoutes);
 router.use("/response-body", responseBodyRoutes);
 router.use("/response-redirect", responseRedirectRoutes);
 router.use("/request-time", requestTimeRoutes);
+router.use("/products/*filepath.json", productsRoutes);
 
 export default router;
